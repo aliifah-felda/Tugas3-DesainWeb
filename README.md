@@ -1,6 +1,3 @@
-nama dan NIM, tema situs, cara menjalankan, serta daftar fitur
-yang berhasil dan yang belum
-
 Nama    : Aliifah Felda Mufarrihati Salwaa
 NIM     : 2511531011
 
