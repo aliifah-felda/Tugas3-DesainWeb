@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+        <link rel="manifest" href="manifest.json">
+    </head>
+
+    <body>
+        <header>
+            <p class="logo">Aliifah Felda</p>
+            <button type="button" class="menu-toggle" aria-label="Buka Navigasi" aria-expanded="false" aria-controls="main-nav">☰</button>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Biodata</a>
+                <a href="kontak.html">Form</a>
+                <button type="button" class="mode">Mode</button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="form">
+                <h1>Form Pesan</h1>
+                <form id="form-pesan" action="proses.php" method="post" novalidate>
+                    <p>
+                        <label for="nama">Nama</label>
+                        <input type="text" name="nama" id="nama" aria-describedby="error-nama" required>
+                        <span id="error-nama" class="invalid" role="alert"></span>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" aria-describedby="error-email" required>
+                        <span id="error-email" class="invalid" role="alert"></span>
+                    </p>
+                    <p>
+                        <label for="topik">Topik</label>
+                        <select name="topik" id="topik">
+                            <option value="Kritik">Kritik</option>
+                            <option value="Saran">Saran</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pesan">Pesan</label>
+                        <textarea name="pesan" id="pesan" rows="5" placeholder="Masukkan kritik atau pesan disini"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit" class="submit">Submit</button>
+                    </p>
+                </form>
+            </section>
+
+            <section class="form">
+                <h2>Connect With Me</h2>
+                <p>Masukkan sosial media dan kontak anda untuk dapat saya hubungi</p>
+                <form action="proses.php" method="post">
+                    <p>
+                        <label for="ig">Instagram</label>
+                        <input type="text" name="ig" id="ig">
+                    </p>
+                    <p>
+                        <label for="wa">WhatsApp</label>
+                        <input type="tel" name="wa" id="wa">
+                    </p>
+                    <p>
+                        <label for="keperluan">Keperluan</label>
+                        <textarea name="keperluan" id="keperluan" rows="5" placeholder="Masukkan keperluan anda disini agar dapat saya hubungi"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit" class="submit">Submit</button>
+                    </p>
+                </form>
+            </section>
+
+            <section class="kontak">
+                <h2>Kontak Saya</h2>
+                <a href = "https://www.instagram.com/lifahfelda_/" target="_blank" rel="noopener" title="instagram">Instagram</a>
+                <a href = "https://www.linkedin.com/in/aliifah-felda-mufarrihati-salwaa-240090369/?isSelfProfile=true" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+            </section>
+        </main>
+
+        <footer>&copy; aliifah felda</footer>
+    </body>
+</html>

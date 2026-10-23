@@ -1,0 +1,389 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    color: #573b2b;
+    background-color: #f5d8de;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #573b2b;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: inherit;
+}
+
+nav a:hover {
+    color: #e75a76;
+}
+
+nav a:focus-visible {
+    outline: 0.15rem solid #d7b1b7;
+    border-radius: 5rem;
+}
+
+.mode {
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #573b2b;
+    border-radius: 0.4rem;
+    background-color: #f5d8de;
+    color: #573b2b;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.mode:hover {
+    background-color: #f58299;
+}
+
+.mode:focus-visible {
+    outline: 0.15rem solid #e75a76;
+    outline-offset: 0.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+aside img {
+    display: block;
+    width: 180px;
+    max-width: 180px;
+    margin: 1rem auto;
+    border: thick solid #ffffff;
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+}
+
+.profil {
+    padding: 0 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 0.1rem solid #e1cbde;
+    background-color: #ffffff;
+}
+
+.kesibukan {
+    padding: 0 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.profil h1 {
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    max-width: 50rem;
+    border-collapse: collapse;
+    margin: 1rem;
+    align-self: center;
+    background-color: #ffffff;
+    color: #775847;
+}
+
+th, td {
+    border: 0.1rem solid #d7b1b7;
+    padding: 0.5rem;
+    text-align: center;
+    color: #775847;
+}
+
+thead {
+    background-color: #f891a6;
+}
+
+.form {
+    background-color: #ffffff;
+    margin: 1rem;
+    padding: 0rem 1.5rem;
+    border: 0.1rem solid #cbd5e1;
+    border-radius: 0.6rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 0.15rem solid #4845eb;
+}
+
+input:hover, textarea:hover, select:hover {
+    outline: 0.15rem solid #c5c4ff;
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 0.15rem solid #4845eb;
+}
+
+.submit {
+    padding: 0.5rem 1rem;
+    background-color: #e75a76;
+    color: #ffffff;
+    border: 0.1rem solid #e75a76;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    padding: 0.5rem 1rem;
+    background-color: #f5d8de;
+    color: #573b2b;
+    border: 0.1rem solid #573b2b;
+    border-radius: 0.4rem;
+}
+
+.submit:focus {
+    outline: 0.15rem solid #e75a76;
+    outline-offset: 0.15rem;
+}
+
+.kontak {
+    margin: 1rem;
+    padding: 0rem 1.5rem;
+}
+
+.kontak a {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #775847;
+    color: #775847;
+}
+
+.kontak a:hover {
+    color: #e75a76;
+    border: 0.1rem solid #e75a76;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+
+/* Fitur Dark Mode */
+body.darkmode {
+    color:#e1cbde;
+    background-color: #1b0b01;
+}
+
+body.darkmode header {
+    background-color: #573b2b;
+    color: #e1cbde;
+}
+
+body.darkmode nav a {
+    color: #e1cbde;
+}
+
+body.darkmode nav a:hover {
+    color: #e75a76;
+}
+
+body.darkmode .mode {
+    background-color: #351a0b;
+    color: #e1cbde;
+    border-color: #e1cbde;
+}
+
+body.darkmode .mode:hover {
+    background-color: #775847;
+}
+
+body.darkmode aside img {
+    border: thick solid #1b0b01;
+    border-radius: 0.8rem;
+    background-color: #1b0b01;
+}
+
+body.darkmode .profil {
+    background-color: #351a0b;
+    color: #d7b1b7;
+    border-color: #351a0b;
+}
+
+body.darkmode table {
+    background-color: #4d2c1a;
+    color: #e1cbde;
+}
+
+body.darkmode thead {
+    background-color: #1b0b01;
+}
+
+body.darkmode th {
+    color: #e1cbde;
+}
+
+body.darkmode td {
+    color: #e1cbde;
+}
+
+body.darkmode .form {
+    background-color: #573b2b;
+    border-color: #684330;
+}
+
+body.darkmode .kontak a {
+    border: 0.1rem solid #e1cbde;
+    color: #e1cbde;
+}
+
+body.darkmode .kontak a:hover {
+    border-color: #725b52;
+    color: #725b52;
+}
+
+body.darkmode footer {
+    background-color: #573b2b;
+    color: #e1cbde;
+}
+
+body.darkmode .invalid {
+    color: #ffacac;
+}
+
+body.darkmode input.input-error, body.darkmode textarea.input-error, body.darkmode select.input-error {
+    border: 0.1rem solid #dc2626;
+}
+
+body.darkmode .kartu {
+    background-color: #351a0b;
+    border-color: #351a0b;
+    color: #d7b1b7;
+}
+
+
+/* responsivitas */
+.menu-toggle {
+    display: none;
+}
+
+@media  screen and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background-color: inherit;
+        font-size: 1.5rem;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        padding: 0.75rem 0;
+    }
+
+    header.nav-terbuka nav {
+        display: flex;
+    }
+
+    header nav a, header nav .mode {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0.65rem;
+    }
+}
+
+/* pesan error */
+.invalid {
+    display: block;
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+}
+
+.ivalid:empty {
+    display: none;
+}
+
+input.input-error, textarea.input-error, select.input-error {
+    border: 0.1rem solid #dc2626;
+}
+
+/* interaksi 3 */
+.daftar-kegiatan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+
+.kartu {
+    padding: 0 1rem 1rem;
+    border: 0.1rem solid #e1cbde;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+.kartu .meta {
+    font-size: 0.85rem;
+    color: #e75a76;
+    margin-top: -0.5rem;
+}

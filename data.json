@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nama": "Kepanitiaan FESTIKA",
+        "tahun": 2026,
+        "deskripsi": "Staff Divisi Acara"
+    },
+    {
+        "id": 2,
+        "nama": "Madani Scholars",
+        "tahun": 2026,
+        "deskripsi": "Awardee"
+    },
+    {
+        "id": 3,
+        "nama": "Kepanitiaan LKMM-TD FTI",
+        "tahun": 2026,
+        "deskripsi": "Staff Divisi Acara"
+    },
+    {
+        "id": 4,
+        "nama": "Kepanitiaan LKMM-TD FTI",
+        "tahun": 2026,
+        "deskripsi": "Staff Mentor"
+    },
+    {
+        "id": 5,
+        "nama": "Himpunan Mahasiswa Informatika",
+        "tahun": 2026,
+        "deskripsi": "Staff Eksternal"
+    }
+]
